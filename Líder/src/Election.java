@@ -41,6 +41,7 @@ public class Election {
 		process2.start();
 		process3.start();
 		
+		election.ringAlgorithm(1);
 	}
 	
 }
