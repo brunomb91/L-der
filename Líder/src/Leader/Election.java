@@ -44,7 +44,7 @@ public class Election {
 		process2.start();
 		process3.start();
 		
-		// election.ringAlgorithm(1);
+		// System.out.println(process1.listIds());
 	}
 	
 }

@@ -1,5 +1,7 @@
 package Communication;
 
+//Retirado e adaptado de https://www.tutorialspoint.com/java/java_thread_communication.htm
+
 public class Chat {
 	 boolean flag = false;
 
@@ -38,8 +40,6 @@ public class Chat {
 		            e.printStackTrace();
 		         }
 		      }
-
-		      // flag = false;
 		      notify();
 		      return id;
 		   }

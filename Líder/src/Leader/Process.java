@@ -1,12 +1,12 @@
 package Leader;
+import java.util.ArrayList;
 import Communication.Chat;
-
-//Retirado e adaptado de https://www.tutorialspoint.com/java/java_thread_communication.htm
 
 public class Process extends Thread {
 	private int id;
 	Chat m;
 	private boolean leader;
+	// private ArrayList<Integer> ids = new ArrayList<Integer>();
 	
 	public Process(Chat m, boolean leader) {
 		this.m = m;
@@ -19,9 +19,19 @@ public class Process extends Thread {
 			m.question("election");
 		}
 		else {
-			System.out.println((m.answer(getId())));
+			//ids.add((int) (m.answer(getId())));
+			System.out.println(m.answer(getId()));
 		}
 	}
+	
+	/*
+	public ArrayList<Integer> listIds() {
+		if(leader==true) {
+			return ids;
+		}
+		return null;
+	}
+	*/
 	
 	public long getId() {
 		return id;
