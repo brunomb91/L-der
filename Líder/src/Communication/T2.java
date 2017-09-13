@@ -1,6 +1,6 @@
 package Communication;
 
-// https://www.tutorialspoint.com/java/java_thread_communication.htm
+// Retirado de https://www.tutorialspoint.com/java/java_thread_communication.htm
 
 public class T2 implements Runnable {
 	 Chat m;

@@ -1,5 +1,7 @@
 package Communication;
 
+//Retirado de https://www.tutorialspoint.com/java/java_thread_communication.htm
+
 public class T1 implements Runnable {
 	Chat m;
 	String[] s1 = { "Hi", "How are you ?", "I am also doing fine!" };

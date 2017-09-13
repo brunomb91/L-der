@@ -1,3 +1,4 @@
+package Leader;
 import java.util.ArrayList;
 
 import Communication.Chat;
@@ -14,12 +15,14 @@ public class Election {
 		listProcesses.add(process);
 	}
 	
+	/*
 	private void ringAlgorithm(int leader) {
 		for (Process i : listProcesses) {
 			System.out.println(i.getId());
 		}
 		
 	}
+	*/
 	
 	public static void main (String[] args) {
 		Election election = new Election();
@@ -41,7 +44,7 @@ public class Election {
 		process2.start();
 		process3.start();
 		
-		election.ringAlgorithm(1);
+		// election.ringAlgorithm(1);
 	}
 	
 }

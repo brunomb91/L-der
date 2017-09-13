@@ -1,4 +1,7 @@
+package Leader;
 import Communication.Chat;
+
+//Retirado e adaptado de https://www.tutorialspoint.com/java/java_thread_communication.htm
 
 public class Process extends Thread {
 	private int id;
