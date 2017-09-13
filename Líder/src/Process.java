@@ -18,7 +18,6 @@ public class Process extends Thread {
 		else {
 			System.out.println((m.answer(getId())));
 		}
-		
 	}
 	
 	public long getId() {
